@@ -1,0 +1,14 @@
+    long long A, B;
+    scanf("%lld %lld", &A, &B);
+    
+    __int128 C = (__int128)A * (__int128)B;
+    __int128 D = (__int128)A + (__int128)B;
+    __int128 E = (__int128)A - (__int128)B;
+    
+    if (C > D && C > E) {
+        printf("*\n");
+    } else if (D > C && D > E) {
+        printf("+\n");
+    } else {
+        printf("-\n");
+    }
